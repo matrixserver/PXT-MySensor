@@ -28,7 +28,7 @@ namespace MySensor {
      * @return number returns analog value from 0 to 1023
      */
     //% blockId="MySensor_readSensor" block="analog sensor %sensorSEL"
-    //% weight=100
+    //% weight=50
     export function readSensor(sensorCH:sensorSEL): number{
 
 	if(sensorCH == sensorSEL.S0){
