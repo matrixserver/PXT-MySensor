@@ -27,10 +27,9 @@ namespace MySensor {
      * @param pin sensor's active pin
      * @return number returns analog value from 0 to 1023
      */
-    //% blockId="MySensor_readAnalog" block="analog sensor %readADC"
-    //% advanced=true
+    //% blockId="MySensor_readSensor" block="analog sensor %sensorSEL"
     //% weight=100
-    export function readAnalog(pin:sensorSEL): number{
+    export function readSensor(pin:sensorSEL): number{
 
 	if(pin == sensorSEL.S0){
 	    return pins.analogReadPin(AnalogPin.P0)
