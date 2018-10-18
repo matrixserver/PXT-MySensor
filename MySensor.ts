@@ -30,7 +30,7 @@ namespace MySensor {
     //% blockId="MySensor_readADC" block="analog sensor %readADC"
     //% weight=100
     export function readADC(readADC:sensorSEL): number{
-	let ADCValue:number
+	let readADC:number
 	if(readADC == sensorSEL.S0){
 	    return readADC = pins.analogReadPin(AnalogPin.P0)
         }
