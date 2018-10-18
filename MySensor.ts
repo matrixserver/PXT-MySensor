@@ -19,7 +19,7 @@
 /**
  * Custom blocks
  */
-//% weight=50 color=#006600 icon="\uf11e"
+//% weight=50 color=#000099 icon="\uf11e"
 namespace MySensor {
 
      /**
@@ -30,24 +30,30 @@ namespace MySensor {
     //% blockId="MySensor_readADC" block="analog sensor %readADC"
     //% weight=100
     export function readADC(readADC:sensorSEL): number{
-	let readADC:number
+	let ADCvalue:number
 	if(readADC == sensorSEL.S0){
-	    return readADC = pins.analogReadPin(AnalogPin.P0)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P0)
+	    return  ADCvalue
         }
 	if(readADC == sensorSEL.S1){
-	    return readADC = pins.analogReadPin(AnalogPin.P1)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P1)
+	    return  ADCvalue
         }
 	if(readADC == sensorSEL.S2){
-	    return readADC = pins.analogReadPin(AnalogPin.P2)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P2)
+	    return  ADCvalue
         }
 	if(readADC == sensorSEL.S3){
-	    return readADC = pins.analogReadPin(AnalogPin.P3)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P3)
+	    return  ADCvalue
         }
 	if(readADC == sensorSEL.S4){
-	    return readADC = pins.analogReadPin(AnalogPin.P4)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P4)
+	    return  ADCvalue
         }
 	if(readADC == sensorSEL.S10){
-	    return readADC = pins.analogReadPin(AnalogPin.P10)
+	    ADCvalue = pins.analogReadPin(AnalogPin.P10)
+	    return  ADCvalue
         }
     }
  }
