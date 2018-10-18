@@ -1,7 +1,7 @@
 /**
-  * Coding for read analog sensor.
-  */
-   enum sensorSEL {
+* Coding for read analog sensor.
+*/
+enum sensorSEL {
 	//% block="P0"
 	S0,
 	//% block="P1"
@@ -19,42 +19,36 @@
 /**
  * Custom blocks
  */
-//% weight=50 color=#000099 icon="\uf11e"
+//% weight=50 color=##006600 icon="\uf11e"
 namespace MySensor {
 
      /**
      * Read Analog Sensor P0-P4,P10 
-     * 
+     * @param pin sensor's active pin
+     * @return number returns analog value from 0 to 1023
      */
-
     //% blockId="MySensor_readAnalog" block="analog sensor %readADC"
     //% advanced=true
     //% weight=100
-    export function readAnalog(readADC:sensorSEL): number{
-	let ADCvalue:number
-	if(readADC == sensorSEL.S0){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P0)
-	    return  ADCvalue
+    export function readAnalog(pin:sensorSEL): number{
+
+	if(pin == sensorSEL.S0){
+	    return pins.analogReadPin(AnalogPin.P0)
         }
-	if(readADC == sensorSEL.S1){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P1)
-	    return  ADCvalue
+	if(pin == sensorSEL.S1){
+	    return pins.analogReadPin(AnalogPin.P1)
         }
-	if(readADC == sensorSEL.S2){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P2)
-	    return  ADCvalue
+	if(pin == sensorSEL.S2){
+	    return pins.analogReadPin(AnalogPin.P2)
         }
-	if(readADC == sensorSEL.S3){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P3)
-	    return  ADCvalue
+	if(pin == sensorSEL.S3){
+	    return pins.analogReadPin(AnalogPin.P3)
         }
-	if(readADC == sensorSEL.S4){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P4)
-	    return  ADCvalue
+	if(pin == sensorSEL.S4){
+	    return pins.analogReadPin(AnalogPin.P4)
         }
-	if(readADC == sensorSEL.S10){
-	    ADCvalue = pins.analogReadPin(AnalogPin.P10)
-	    return  ADCvalue
+	if(pin == sensorSEL.S10){
+	    return pins.analogReadPin(AnalogPin.P10)
         }
     }
  }
