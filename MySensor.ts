@@ -19,7 +19,7 @@
 /**
  * Custom blocks
  */
-//% weight=50 color=#000099 icon="\uf11e"
+//% weight=50 color=#006600 icon="\uf11e"
 namespace MySensor {
 
      /**
