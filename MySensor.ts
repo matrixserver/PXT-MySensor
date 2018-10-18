@@ -19,7 +19,7 @@
 /**
  * Custom blocks
  */
-//% weight=50 color=#ffff00 icon="\uf11e"
+//% weight=50 color=#000099 icon="\uf11e"
 namespace MySensor {
 
      /**
@@ -30,7 +30,7 @@ namespace MySensor {
     //% blockId="MySensor_readADC" block="analog sensor %readADC"
     //% weight=100
     export function readADC(readADC:sensorSEL): number{
-
+	let ADCValue:number
 	if(readADC == sensorSEL.S0){
 	    return readADC = pins.analogReadPin(AnalogPin.P0)
         }
