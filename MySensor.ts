@@ -26,23 +26,36 @@ namespace MySensor {
     //% blockId="Mysensor_analog"  block="analog read|%AnalogSensor|"
     //% weight=90
    export function analogREAD(analogSelect:AnalogSensor): number {
+	   let analogREAD = 0
 	  if (analogSelect==AnalogSensor.S0) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P0)
+          	analogREAD = pins.analogReadPin(AnalogPin.P0)
+		basic.pause(10)
+		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S1) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P1)
+          	analogREAD = pins.analogReadPin(AnalogPin.P1)
+		basic.pause(10)
+		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S2) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P2)
+          	analogREAD = pins.analogReadPin(AnalogPin.P2)
+		basic.pause(10)
+		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S3) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P3)
+          	analogREAD = pins.analogReadPin(AnalogPin.P3)
+		basic.pause(10)
+		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S4) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P4)
+          	analogREAD = pins.analogReadPin(AnalogPin.P4)
+		basic.pause(10)
+		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S10) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P10)
+          	analogREAD = pins.analogReadPin(AnalogPin.P10)
+		basic.pause(10)
+		return analogREAD
 	  }
-  }
+  	}
 }
