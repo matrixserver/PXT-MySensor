@@ -1,5 +1,5 @@
 {
-    "name": "pxt-MySensor",
+    "name": "PXT-MySensor",
     "version": "0.0.1",
     "description": "A MakeCode package to use analog sensor",
     "license": "MIT",
