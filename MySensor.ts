@@ -29,32 +29,26 @@ namespace MySensor {
 	   let analogREAD = 0
 	  if (analogSelect==AnalogSensor.S0) {
           	analogREAD = pins.analogReadPin(AnalogPin.P0)
-		basic.pause(10)
 		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S1) {
           	analogREAD = pins.analogReadPin(AnalogPin.P1)
-		basic.pause(10)
 		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S2) {
           	analogREAD = pins.analogReadPin(AnalogPin.P2)
-		basic.pause(10)
 		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S3) {
           	analogREAD = pins.analogReadPin(AnalogPin.P3)
-		basic.pause(10)
 		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S4) {
           	analogREAD = pins.analogReadPin(AnalogPin.P4)
-		basic.pause(10)
 		return analogREAD
 	  }
 	  if (analogSelect==AnalogSensor.S10) {
           	analogREAD = pins.analogReadPin(AnalogPin.P10)
-		basic.pause(10)
 		return analogREAD
 	  }
   	}
