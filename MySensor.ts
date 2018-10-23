@@ -22,9 +22,8 @@ namespace MySensor {
 
     /**
      * read analog light sensor's value
-     * @return number   returns analog value from 0 to 1023
      */
-    //% blockId="Mysensor_analog"  block="read analog sensor |%AnalogSensor|"
+    //% blockId="Mysensor_analog"  block="analog read|%AnalogSensor|"
     //% weight=90
    export function analogREAD(analogSelect:AnalogSensor): number {
 	  if (analogSelect==AnalogSensor.S0) {
