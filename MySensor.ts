@@ -27,7 +27,6 @@ namespace MySensor {
     //% blockId="Mysensor_analog"  block="read analog sensor |%AnalogSensor|"
     //% weight=90
    export function analogREAD(analogSelect:AnalogSensor): number {
- 	let ADCValue:number
 	  if (analogSelect==AnalogSensor.S0) {
           	return analogREAD = pins.analogReadPin(AnalogPin.P0)
 	  }
