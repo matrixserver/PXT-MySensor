@@ -17,7 +17,7 @@ enum AnalogSensor {
         S10
     }
 
-//% weight=50 color=#cc6600 icon="\uf11e"
+//% weight=50 color=#ff9933 icon="\uf11e"
 namespace MySensor {
 
     /**
