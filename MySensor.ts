@@ -1,8 +1,8 @@
 /**
  * support for read analog and digital sensor
  */
-//% weight=10 icon="\uf11e" color=#339933 block="MySensor"
-namespace MySensor {
+//% weight=10 icon="\uf11e" color=#339933 block="MyRobot.Sensor"
+namespace MyRobot.Sensor {
 
    export enum analogPort {
         P0,
