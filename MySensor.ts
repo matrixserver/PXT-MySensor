@@ -1,7 +1,7 @@
 /**
  * support for read analog sensor
  */
-//% weight=10 icon="\uf11e" color=#33ff33 block="MySensor"
+//% weight=10 icon="\uf11e" color=#339933 block="MySensor"
 namespace MySensor {
 
     export enum analogPins {
