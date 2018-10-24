@@ -58,14 +58,14 @@ namespace MySensor {
 
     /**
      * read Digital sensor value from P0-P12
-     * @param selectpin         select digital pin to read
+     * @param selectpins         select digital pin to read
      * @return number           returns analog value  0 or 1
      */
     //% blockId=MySensor_digitalRead
-    //% block="digital read sensor |%selectpin|"
+    //% block="digital read sensor |%selectpins|"
     //% weight=80
-    export function digitalRead(selectpin:digitalPins): number {
-        switch (selectpin) {
+    export function digitalRead(selectpins:digitalPins): number {
+        switch (selectpins) {
             case digitalPins.P0:
                 return pins.digitalReadPin(DigitalPin.P0);
             case digitalPins.P1:
