@@ -35,7 +35,7 @@ namespace MySensor {
      * @return number           returns analog value from 0 to 1023
      */
     //% blockId=MySensor_analogRead
-    //% block="analog read sensor |%selectpin|"
+    //% block="analog read |%selectpin|"
     //% weight=80
     export function analogRead(selectpin: analogPins): number {
         switch (selectpin) {
@@ -62,7 +62,7 @@ namespace MySensor {
      * @return number           returns digital value  0 or 1
      */
     //% blockId=MySensor_digitalRead
-    //% block="digital read sensor |%selectpins|"
+    //% block="digital read |%selectpins|"
     //% weight=79
     export function digitalRead(selectpins:digitalPort): number {
         switch (selectpins) {
