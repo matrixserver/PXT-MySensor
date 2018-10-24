@@ -76,8 +76,8 @@ namespace MySensor {
                 return pins.digitalReadPin(DigitalPin.P3);
               case digitalPort.P4:
                 return pins.digitalReadPin(DigitalPin.P4;
-              case digitalPort.P10:
-                return pins.digitalReadPin(DigitalPin.P10;
+              case digitalPort.P5:
+                return pins.digitalReadPin(DigitalPin.P5;
               case digitalPort.P6:
                 return pins.digitalReadPin(DigitalPin.P6);
               case digitalPort.P7:
@@ -86,12 +86,12 @@ namespace MySensor {
                 return pins.digitalReadPin(DigitalPin.P8);
               case digitalPort.P9:
                 return pins.digitalReadPin(DigitalPin.P9);
-              case digitalPort.P12:
-                return pins.digitalReadPin(DigitalPin.P12);
-              case digitalPort.P5:
-                return pins.digitalReadPin(DigitalPin.P5);
+              case digitalPort.P10:
+                return pins.digitalReadPin(DigitalPin.P10);
               case digitalPort.P11:
                 return pins.digitalReadPin(DigitalPin.P11);
+              case digitalPort.P12:
+                return pins.digitalReadPin(DigitalPin.P12);
             default:
                 return 0;
         }
