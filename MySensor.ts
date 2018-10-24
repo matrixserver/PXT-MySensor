@@ -1,49 +1,43 @@
 /**
- * support for Sensor
+ * support for read analog sensor
  */
-
-enum AnalogSensor {
-        //% block="P0"
-        S0,
-        //% block="P1"
-        S1,
-        //% block="P2"
-        S2,
-        //% block="P3"
-        S3,
-        //% block="P4"
-        S4,
-        //% block="P10"
-        S10
-    }
-
-//% weight=50 color=#33ccff icon="\uf11e"
+//% weight=10 icon="\uf11e" color=#33ff33 block="MySensor"
 namespace MySensor {
 
-    /**
-     * read analog light sensor's value
-     */
-    //% blockId="Mysensor_analog"  block="analog read| %AnalogSensor"
-    //% weight=90
-   export function analogREAD(analogSelect:AnalogSensor): number {
+    export enum analogPins {
+        P0,
+        P1,
+        P2,
+        P3,
+        P4,
+        P10
+    }
 
-	  if (analogSelect==AnalogSensor.S0) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P0)
-	  }
-	  if (analogSelect==AnalogSensor.S1) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P1)
-	  }
-	  if (analogSelect==AnalogSensor.S2) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P2)
-	  }
-	  if (analogSelect==AnalogSensor.S3) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P3)
-	  }
-	  if (analogSelect==AnalogSensor.S4) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P4)
-	  }
-	  if (analogSelect==AnalogSensor.S10) {
-          	return analogREAD = pins.analogReadPin(AnalogPin.P10)
-	  }
-  	}
+
+    /**
+     * read analog sensor value from P0 -P4 and P10
+     * @param selectpin         select analog pin to read
+     * @return number           returns analog value from 0 to 1023
+     */
+    //% blockId=MySensor_analogRead
+    //% block="analog read sensor |%selectpin|"
+    //% weight=80
+    export function analogRead(selectpin: analogPins): number {
+        switch (selectpin) {
+            case analogPins.P0:
+                return pins.analogReadPin(AnalogPin.P0);
+            case analogPins.P1:
+                return pins.analogReadPin(AnalogPin.P1);
+            case analogPins.P2:
+                return pins.analogReadPin(AnalogPin.P2);
+            case analogPins.P3:
+                return pins.analogReadPin(AnalogPin.P3);
+            case analogPins.P4:
+                return pins.analogReadPin(AnalogPin.P4);
+            case analogPins.P10:
+                return pins.analogReadPin(AnalogPin.P10);
+            default:
+                return 0;
+        }
+    }
 }
