@@ -13,7 +13,7 @@ namespace MySensor {
         P10
     }
 
-    export enum digitalPins {
+    export enum digitalPort {
         P0,
         P1,
         P2,
@@ -59,38 +59,38 @@ namespace MySensor {
     /**
      * read Digital sensor value from P0-P12
      * @param selectpins         select digital pin to read
-     * @return number           returns analog value  0 or 1
+     * @return number           returns digital value  0 or 1
      */
     //% blockId=MySensor_digitalRead
     //% block="digital read sensor |%selectpins|"
     //% weight=79
-    export function digitalRead(selectpins:digitalPins): number {
+    export function digitalRead(selectpins:digitalPort): number {
         switch (selectpins) {
-            case digitalPins.P0:
+            case digitalPort.P0:
                 return pins.digitalReadPin(DigitalPin.P0);
-            case digitalPins.P1:
+            case digitalPort.P1:
                 return pins.digitalReadPin(DigitalPin.P1);
-             case digitalPins.P2:
+             case digitalPort.P2:
                 return pins.digitalReadPin(DigitalPin.P2);
-              case digitalPins.P3:
+              case digitalPort.P3:
                 return pins.digitalReadPin(DigitalPin.P3);
-              case digitalPins.P4:
+              case digitalPort.P4:
                 return pins.digitalReadPin(DigitalPin.P4;
-              case digitalPins.P10:
+              case digitalPort.P10:
                 return pins.digitalReadPin(DigitalPin.P10);
-              case digitalPins.P6:
+              case digitalPort.P6:
                 return pins.digitalReadPin(DigitalPin.P6);
-              case digitalPins.P7:
+              case digitalPort.P7:
                 return pins.digitalReadPin(DigitalPin.P7);
-              case digitalPins.P8:
+              case digitalPort.P8:
                 return pins.digitalReadPin(DigitalPin.P8);
-              case digitalPins.P9:
+              case digitalPort.P9:
                 return pins.digitalReadPin(DigitalPin.P9);
-              case digitalPins.P12:
+              case digitalPort.P12:
                 return pins.digitalReadPin(DigitalPin.P12);
-              case digitalPins.P5:
+              case digitalPort.P5:
                 return pins.digitalReadPin(DigitalPin.P5);
-              case digitalPins.P11:
+              case digitalPort.P11:
                 return pins.digitalReadPin(DigitalPin.P11);
             default:
                 return 0;
