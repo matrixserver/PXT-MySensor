@@ -77,7 +77,7 @@ namespace MySensor {
               case digitalPort.P4:
                 return pins.digitalReadPin(DigitalPin.P4;
               case digitalPort.P10:
-                return pins.digitalReadPin(DigitalPin.P10);
+                return pins.digitalReadPin(DigitalPin.P10;
               case digitalPort.P6:
                 return pins.digitalReadPin(DigitalPin.P6);
               case digitalPort.P7:
