@@ -4,7 +4,7 @@
 //% weight=10 icon="\uf11e" color=#339933 block="MySensor"
 namespace MySensor {
 
-    export enum analogPins {
+   export enum analogPins {
         P0,
         P1,
         P2,
@@ -13,7 +13,7 @@ namespace MySensor {
         P10
     }
 
-        export enum digitalPins {
+    export enum digitalPins {
         P0,
         P1,
         P2,
@@ -57,7 +57,7 @@ namespace MySensor {
     }
 
     /**
-     * read Digital sensor value from P0 -P12
+     * read Digital sensor value from P0-P12
      * @param selectpin         select digital pin to read
      * @return number           returns analog value  0 or 1
      */
@@ -75,7 +75,7 @@ namespace MySensor {
               case digitalPins.P3:
                 return pins.digitalReadPin(DigitalPin.P3);
               case digitalPins.P4:
-                return pins.digitalReadPin(DigitalPin.P04;
+                return pins.digitalReadPin(DigitalPin.P4;
               case digitalPins.P10:
                 return pins.digitalReadPin(DigitalPin.P10);
               case digitalPins.P6:
