@@ -63,7 +63,7 @@ namespace MySensor {
      */
     //% blockId=MySensor_digitalRead
     //% block="digital read sensor |%selectpins|"
-    //% weight=80
+    //% weight=79
     export function digitalRead(selectpins:digitalPins): number {
         switch (selectpins) {
             case digitalPins.P0:
