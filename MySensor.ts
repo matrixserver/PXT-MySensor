@@ -23,7 +23,7 @@ namespace MySensor {
     /**
      * read analog light sensor's value
      */
-    //% blockId="Mysensor_analog"  block="analog read|%AnalogSensor|"
+    //% blockId="Mysensor_analog"  block="analog read| %AnalogSensor"
     //% weight=90
    export function analogREAD(analogSelect:AnalogSensor): number {
 
