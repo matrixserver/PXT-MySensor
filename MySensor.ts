@@ -28,28 +28,22 @@ namespace MySensor {
    export function analogREAD(analogSelect:AnalogSensor): number {
 
 	  if (analogSelect==AnalogSensor.S0) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P0)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P0)
 	  }
 	  if (analogSelect==AnalogSensor.S1) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P1)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P1)
 	  }
 	  if (analogSelect==AnalogSensor.S2) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P2)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P2)
 	  }
 	  if (analogSelect==AnalogSensor.S3) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P3)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P3)
 	  }
 	  if (analogSelect==AnalogSensor.S4) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P4)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P4)
 	  }
 	  if (analogSelect==AnalogSensor.S10) {
-          	analogREAD = pins.analogReadPin(AnalogPin.P10)
-		return analogREAD
+          	return analogREAD = pins.analogReadPin(AnalogPin.P10)
 	  }
   	}
 }
