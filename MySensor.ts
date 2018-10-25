@@ -1,7 +1,7 @@
 /**
  * support for read analog and digital sensor
  */
-//% weight=70 icon="\uf11e" color=#339933 block="MySensor"
+//% weight=8 icon="\uf11e" color=#339933 block="MySensor"
 namespace MySensor {
 
    export enum analogPort {
